@@ -1,0 +1,103 @@
+# 站点信息
+site_name: repo-template
+site_url: https://smjc-macro.github.io/repo-template
+repo_url: https://github.com/smjc-macro/repo-template
+repo_name: repo-template
+edit_uri: https://github.com/smjc-macro/repo-template/blob/main/docs
+site_description: 仓库模版。
+site_author: repo-template
+copyright: Copyright © 2024 repo-template
+
+# 导航信息
+nav:
+  - 主页: index.md
+
+# 右下角展示的图标
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/smjc-macro/repo-template
+      name: Github 仓库
+    - icon: simple/gmail
+      link: mailto:default@example.com
+      name: 邮件联系
+
+# 主题配置，这里使用了 material 主题，一般无需修改
+theme:
+  name: material
+  language: zh
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.integrate
+  custom_dir: overrides
+
+# 安装的 markdown 扩展，一般无需修改
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      permalink_title: 链接到本节以供参考
+      toc_depth: 5
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.keys
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+# 额外的 javascript 文件，无需修改
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+# 额外的插件，无需修改
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+      jieba_dict: dict.txt
+  - mike:
+      # These fields are all optional; the defaults are as below...
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
