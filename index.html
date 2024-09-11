@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#repo-template" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -322,7 +322,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       配置虚拟环境
     </span>
@@ -331,7 +331,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       撰写项目文档
     </span>
@@ -340,7 +340,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       修改构建文件
     </span>
@@ -349,9 +349,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       本地预览
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      远程部署
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#website" class="md-nav__link">
+    <span class="md-ellipsis">
+      添加 Website 到仓库主页的信息中
     </span>
   </a>
   
@@ -396,18 +414,41 @@
   
 
 
-<h1 id="repo-template">repo-template<a class="headerlink" href="#repo-template" title="链接到本节以供参考">&para;</a></h1>
+<h1 id="_1">构建参考<a class="headerlink" href="#_1" title="链接到本节以供参考">&para;</a></h1>
 <p><a href="https://github.com/smjc-macro/repo-template">repo-template</a> 是一个 MKDocs-Materials 模板，用于快速搭建宏程序帮助文档的 Github Pages，按照以下步骤即可构建站点。</p>
 <h2 id="python">安装 Python<a class="headerlink" href="#python" title="链接到本节以供参考">&para;</a></h2>
 <p>安装 <a href="https://www.python.org/downloads">Python</a> 解释器，建议使用 3.12 及以上版本。</p>
-<h2 id="_1">配置虚拟环境<a class="headerlink" href="#_1" title="链接到本节以供参考">&para;</a></h2>
+<h2 id="_2">配置虚拟环境<a class="headerlink" href="#_2" title="链接到本节以供参考">&para;</a></h2>
 <p>打开 VS Code，安装 Python 扩展，按下快捷键 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span>，输入 <code>Python: Create Environment</code>，根据提示建立一个 .venv 虚拟环境，注意勾选安装 <code>requirements.txt</code> 中的依赖项。</p>
-<h2 id="_2">撰写项目文档<a class="headerlink" href="#_2" title="链接到本节以供参考">&para;</a></h2>
+<h2 id="_3">撰写项目文档<a class="headerlink" href="#_3" title="链接到本节以供参考">&para;</a></h2>
 <p>需使用 markdown 格式撰写项目文档。建议所有项目文档都存放在 <code>docs</code> 目录下。</p>
-<h2 id="_3">修改构建文件<a class="headerlink" href="#_3" title="链接到本节以供参考">&para;</a></h2>
-<p>修改 <code>mkdocs.yml</code> 文件，修改站点信息、导航信息等，各配置项的具体含义请参考 <a href="https://www.mkdocs.org/user-guide/configuration/">mkdocs 文档</a>。</p>
-<h2 id="_4">本地预览<a class="headerlink" href="#_4" title="链接到本节以供参考">&para;</a></h2>
+<h2 id="_4">修改构建文件<a class="headerlink" href="#_4" title="链接到本节以供参考">&para;</a></h2>
+<p>修改 <code>mkdocs.yml</code> 文件，修改站点信息、导航信息等。</p>
+<p>各配置项的具体含义请参考：</p>
+<ul>
+<li><a href="https://www.mkdocs.org/user-guide/configuration/">mkdocs 文档</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-homepage/">mkdocs-material 文档</a></li>
+</ul>
+<h2 id="_5">本地预览<a class="headerlink" href="#_5" title="链接到本节以供参考">&para;</a></h2>
 <p>运行 <code>mkdocs serve</code> 命令，即可在浏览器中预览项目文档。默认地址为：<a href="http://127.0.0.1:8000/repo-template/">127.0.0.1:8000/repo-template</a></p>
+<h2 id="_6">远程部署<a class="headerlink" href="#_6" title="链接到本节以供参考">&para;</a></h2>
+<p>将本地仓库推送到远程仓库，即可在 GitHub Pages 上部署项目文档。</p>
+<!-- prettier-ignore-start -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>您需要前往仓库的 Settings -&gt; Pages -&gt; Build and deployment -&gt; Source 中选择 <strong>Deploy from a branch</strong>，并在下方的 Branch 中选择 <strong>gh-pages</strong> 开启仓库的 Github Pages 功能。</p>
+<p><img alt="" src="assets/activate-pages.png" /></p>
+</div>
+<!-- prettier-ignore-end -->
+
+<h2 id="website">添加 Website 到仓库主页的信息中<a class="headerlink" href="#website" title="链接到本节以供参考">&para;</a></h2>
+<p>前往仓库主页，点击右侧边栏的齿轮，勾选 <code>Use your Github Pages website</code> 即可。</p>
+<!-- prettier-ignore-start -->
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>您可以前往项目仓库的 Action 页面查看站点的构建过程。</p>
+</div>
+<!-- prettier-ignore-end -->
 
 
 
