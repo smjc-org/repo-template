@@ -397,17 +397,17 @@
 
 
 <h1 id="repo-template">repo-template<a class="headerlink" href="#repo-template" title="链接到本节以供参考">&para;</a></h1>
-<p><a href="https://github.com/smjc-macro/repo-template">repo-template</a> 是一个 MKDocs 模板，用于快速搭建宏程序帮助文档的 Github Pages 链接，按照以下步骤即可构建站点。</p>
+<p><a href="https://github.com/smjc-macro/repo-template">repo-template</a> 是一个 MKDocs-Materials 模板，用于快速搭建宏程序帮助文档的 Github Pages，按照以下步骤即可构建站点。</p>
 <h2 id="python">安装 Python<a class="headerlink" href="#python" title="链接到本节以供参考">&para;</a></h2>
 <p>安装 <a href="https://www.python.org/downloads">Python</a> 解释器，建议使用 3.12 及以上版本。</p>
 <h2 id="_1">配置虚拟环境<a class="headerlink" href="#_1" title="链接到本节以供参考">&para;</a></h2>
-<p>打开 VS Code，安装 Python 扩展，按下快捷键 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span>，输入 <code>Python: Create Environment</code>，建立一个虚拟环境，注意选择在建立虚拟环境后自动安装 <code>requirement.txt</code> 中的依赖项。</p>
+<p>打开 VS Code，安装 Python 扩展，按下快捷键 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span>，输入 <code>Python: Create Environment</code>，根据提示建立一个 .venv 虚拟环境，注意勾选安装 <code>requirements.txt</code> 中的依赖项。</p>
 <h2 id="_2">撰写项目文档<a class="headerlink" href="#_2" title="链接到本节以供参考">&para;</a></h2>
-<p>需使用 Markdown 格式撰写项目文档，</p>
+<p>需使用 markdown 格式撰写项目文档。建议所有项目文档都存放在 <code>docs</code> 目录下。</p>
 <h2 id="_3">修改构建文件<a class="headerlink" href="#_3" title="链接到本节以供参考">&para;</a></h2>
-<p>修改 <code>mkdocs.yml</code> 文件，添加项目信息，如标题、描述、作者、版本等信息，组织导航页信息。</p>
+<p>修改 <code>mkdocs.yml</code> 文件，修改站点信息、导航信息等，各配置项的具体含义请参考 <a href="https://www.mkdocs.org/user-guide/configuration/">mkdocs 文档</a>。</p>
 <h2 id="_4">本地预览<a class="headerlink" href="#_4" title="链接到本节以供参考">&para;</a></h2>
-<p>运行 <code>mkdocs serve</code> 命令，即可在浏览器中预览项目文档。默认地址为：localhost:8000</p>
+<p>运行 <code>mkdocs serve</code> 命令，即可在浏览器中预览项目文档。默认地址为：<a href="http://127.0.0.1:8000/repo-template/">127.0.0.1:8000/repo-template</a></p>
 
 
 
