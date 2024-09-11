@@ -18,7 +18,13 @@
 
 ## 配置虚拟环境
 
-打开 VS Code，安装 Python 扩展，按下快捷键 ++ctrl+shift+p++，输入 `Python: Create Environment`，根据提示建立一个 .venv 虚拟环境，注意勾选安装 `requirements.txt` 中的依赖项。
+打开 VS Code，安装 [Python 扩展](https://marketplace.visualstudio.com/items?itemName=ms-python.python)，按下快捷键 ++ctrl+shift+p++，输入 `Python: Create Environment`，根据提示建立一个 .venv 虚拟环境，注意勾选安装 `requirements.txt` 中的依赖项。
+
+快捷键 ++ctrl+grave++ 打开终端，运行以下命令激活虚拟环境：
+
+```bash
+.venv/Scripts/activate
+```
 
 ## 撰写项目文档
 
@@ -49,7 +55,9 @@
 
 <!-- prettier-ignore-end -->
 
-## 添加 Website 到仓库主页的信息中
+## 其他可选步骤
+
+### 添加 Website 到仓库主页的信息中
 
 前往仓库主页，点击右侧边栏的齿轮，勾选 `Use your Github Pages website` 即可。
 
