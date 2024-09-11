@@ -37,7 +37,7 @@
 各配置项的具体含义请参考：
 
 - [mkdocs 文档](https://www.mkdocs.org/user-guide/configuration/)
-- [mkdocs-material 文档](https://squidfunk.github.io/mkdocs-material/setup/changing-the-homepage/)
+- [mkdocs-material 文档](https://squidfunk.github.io/mkdocs-material/setup/)
 
 ## 本地预览
 
