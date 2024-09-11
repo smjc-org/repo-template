@@ -322,6 +322,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装 VS Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       配置虚拟环境
@@ -418,6 +427,15 @@
 <p><a href="https://github.com/smjc-macro/repo-template">repo-template</a> 是一个 MKDocs-Materials 模板，用于快速搭建宏程序帮助文档的 Github Pages，按照以下步骤即可构建站点。</p>
 <h2 id="python">安装 Python<a class="headerlink" href="#python" title="链接到本节以供参考">&para;</a></h2>
 <p>安装 <a href="https://www.python.org/downloads">Python</a> 解释器，建议使用 3.12 及以上版本。</p>
+<h2 id="vs-code">安装 VS Code<a class="headerlink" href="#vs-code" title="链接到本节以供参考">&para;</a></h2>
+<p>安装 <a href="https://code.visualstudio.com">VS Code</a> 用于书写项目的 Markdown 文档。</p>
+<!-- prettier-ignore-start -->
+<details class="note">
+<summary>额外说明</summary>
+<p>实际上这里不一定要使用 VS Code，任意一个文本编辑器都可以，但是使用 VS Code 可以更方便地建立 Python 的虚拟环境。</p>
+</details>
+<!-- prettier-ignore-end -->
+
 <h2 id="_2">配置虚拟环境<a class="headerlink" href="#_2" title="链接到本节以供参考">&para;</a></h2>
 <p>打开 VS Code，安装 Python 扩展，按下快捷键 <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span>，输入 <code>Python: Create Environment</code>，根据提示建立一个 .venv 虚拟环境，注意勾选安装 <code>requirements.txt</code> 中的依赖项。</p>
 <h2 id="_3">撰写项目文档<a class="headerlink" href="#_3" title="链接到本节以供参考">&para;</a></h2>
@@ -432,10 +450,10 @@
 <h2 id="_5">本地预览<a class="headerlink" href="#_5" title="链接到本节以供参考">&para;</a></h2>
 <p>运行 <code>mkdocs serve</code> 命令，即可在浏览器中预览项目文档。默认地址为：<a href="http://127.0.0.1:8000/repo-template/">127.0.0.1:8000/repo-template</a></p>
 <h2 id="_6">远程部署<a class="headerlink" href="#_6" title="链接到本节以供参考">&para;</a></h2>
-<p>将本地仓库推送到远程仓库，即可在 GitHub Pages 上部署项目文档。</p>
+<p>将本地仓库推送到远程仓库，Github Action 会自动部署项目文档。</p>
 <!-- prettier-ignore-start -->
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">部署后的必要操作</p>
 <p>您需要前往仓库的 Settings -&gt; Pages -&gt; Build and deployment -&gt; Source 中选择 <strong>Deploy from a branch</strong>，并在下方的 Branch 中选择 <strong>gh-pages</strong> 开启仓库的 Github Pages 功能。</p>
 <p><img alt="" src="assets/activate-pages.png" /></p>
 </div>
@@ -444,10 +462,10 @@
 <h2 id="website">添加 Website 到仓库主页的信息中<a class="headerlink" href="#website" title="链接到本节以供参考">&para;</a></h2>
 <p>前往仓库主页，点击右侧边栏的齿轮，勾选 <code>Use your Github Pages website</code> 即可。</p>
 <!-- prettier-ignore-start -->
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<details class="info">
+<summary>补充说明</summary>
 <p>您可以前往项目仓库的 Action 页面查看站点的构建过程。</p>
-</div>
+</details>
 <!-- prettier-ignore-end -->
 
 
